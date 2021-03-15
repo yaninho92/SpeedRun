@@ -32,7 +32,7 @@
    */
   
   body {
-    --ion-color-primary: #428cff;
+    --ion-color-primary: #f8ae6b;
     --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255,255,255;
@@ -88,7 +88,7 @@
     --ion-color-medium-shade: #86888f;
     --ion-color-medium-tint: #a2a4ab;
   
-    --ion-color-light: #222428;
+    --ion-color-light: #302d42;
     --ion-color-light-rgb: 34,36,40;
     --ion-color-light-contrast: #ffffff;
     --ion-color-light-contrast-rgb: 255,255,255;
@@ -102,7 +102,7 @@
    */
   
   .ios body {
-    --ion-background-color: #000000;
+    --ion-background-color: #302d42;
     --ion-background-color-rgb: 0,0,0;
   
     --ion-text-color: #ffffff;
@@ -141,7 +141,7 @@
    */
   
   .md body {
-    --ion-background-color: #121212;
+    --ion-background-color: #302d42;
     --ion-background-color-rgb: 18,18,18;
   
     --ion-text-color: #ffffff;
@@ -175,4 +175,16 @@
   ion-title.title-large {
     --color: white;
   }
+}
+.img{
+  border-radius: 30px;
+  height: 140px;
+  width: 95px;
+}
+.bannierePub{
+  height: 70px;
+  width: 385px;
+}
+.row{
+margin-top: 20px;
 }
