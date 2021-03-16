@@ -1,6 +1,41 @@
 <ion-content>
-  <img src="../../assets/img/logo/Speed_Run_logo.png" alt="Logo SpeedRun">
+  <ion-card color="light">
+    <ion-item color="secondary">
+      <ion-icon color="primary" name="flash-outline" slot="start"></ion-icon>
+      <ion-label>Offre Prémium</ion-label>
+      <ion-button color="primary" [routerLink]="['']" type="submit" fill="outline" slot="end"><ion-icon color="primary" name="card-outline"></ion-icon></ion-button>
+    </ion-item>
+  
+    <ion-card-content>
+      Accéde à l'offre pémium pour seulement 20€ par mois.
+      Un Coach personnelle qui t'attribue des exercices personnelle et .... 
+    </ion-card-content>
+  </ion-card>
+  
   <form>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item color="light" lines="full">
+            <ion-avatar slot="start">
+              <img src="../../assets/img/avatar/profil.jpg">
+            </ion-avatar>
+             <ion-input type="file"></ion-input>
+          </ion-item>
+        </ion-col>
+      
+        <ion-col>
+          <ion-button [routerLink]="['']" type="submit" expand="block">Prémium</ion-button>
+        </ion-col>
+    </ion-row>
+
+    <ion-item color="light" lines="full">
+      <div class="inputContainer">
+        <ion-label position="floating">Nom d'utilisateur</ion-label>
+        <ion-input type="text" required></ion-input>
+      </div>
+    </ion-item>
+
     <ion-item color="light" lines="full">
       <div class="inputContainer">
         <ion-label position="floating">Email</ion-label>
@@ -8,15 +43,65 @@
       </div>
     </ion-item>
 
-    <ion-item color="light" lines="full">
-      <ion-label position="floating">Mot de passe</ion-label>
-      <ion-input type="password" required></ion-input>
-    </ion-item>
+      <ion-item color="light" lines="full">
+        <div class="inputContainer">
+          <ion-label position="floating">Mot de passe</ion-label>
+          <ion-input type="text" required></ion-input>
+        </div>
+      </ion-item>
 
+      <ion-item color="light" lines="full">
+        <div class="inputContainer">
+          <ion-label position="floating">Confirme ton mot de passe</ion-label>
+          <ion-input type="text" required></ion-input>
+        </div>
+      </ion-item>
+
+      <ion-item color="light" lines="full">
+        <div class="inputContainer">
+          <ion-label position="floating">Poids</ion-label>
+          <ion-input type="text" required></ion-input>
+        </div>
+      </ion-item>
+
+      <ion-item color="light" lines="full">
+        <div class="inputContainer">
+          <ion-label position="floating">Taille</ion-label>
+          <ion-input type="text" required></ion-input>
+        </div>
+      </ion-item>
+
+      <ion-item color="light" lines="full">
+        <div class="inputContainer">
+          <ion-label position="floating">Ecg</ion-label>
+          <ion-input type="text" required></ion-input>
+        </div>
+      </ion-item>
+      
+      <ion-item color="light">
+        <ion-label>Programme</ion-label>
+        <ion-select value="poids" okText="Okay" cancelText="Annuler">
+          <ion-select-option value="poids">Perte de poids</ion-select-option>
+          <ion-select-option value="masse">Prise de masse</ion-select-option>
+          <ion-select-option value="fesses">Grosse fesses</ion-select-option>
+          <ion-select-option value="sculte">Corps sculter</ion-select-option>
+        </ion-select>
+      </ion-item>
+      
+      <ion-item color="light">
+        <ion-label>Environement</ion-label>
+        <ion-select value="interieur" okText="Okay" cancelText="Annuler">
+          <ion-select-option value="interieur">Intérieur</ion-select-option>
+          <ion-select-option value="exterieur">Extérieur</ion-select-option>
+          <ion-select-option value="2">Les deux</ion-select-option>
+        </ion-select>
+      </ion-item>
+  </ion-grid>
+
+    <p><ion-checkbox color="primary"></ion-checkbox>En cochant la case J'accepte les présentes conditions, vous confirmez avoir lu, compris et acceptez le règlement prévu aux Conditions d'utilisation</p>
     <ion-row>
       <ion-col>
-        <ion-button [routerLink]="['/home']" type="submit" expand="block">Connexion</ion-button>
-        <a [routerLink]="['/forgot-password']" class="small-text">Mot de passe oublier ?</a>
+        <ion-button [routerLink]="['']" type="submit" expand="block">Inscription</ion-button>
       </ion-col>
     </ion-row>
   </form>
