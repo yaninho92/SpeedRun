@@ -12,9 +12,11 @@
     <ion-button tab="profileCalendar"><ion-icon name="calendar-outline"></ion-icon></ion-button>
   </ion-item>
   <ion-item color="light">
-    <ion-button tab="profileStat"><ion-icon name="stats-chart-outline"></ion-icon></ion-button>
+    <ion-button ><ion-icon name="stats-chart-outline"></ion-icon></ion-button>
     <ion-title>Statistique</ion-title>
-      <canvas #doughnutCanvas ></canvas>
+    <section class="graphContainer">
+      <canvas #barCanvas></canvas>
+    </section>
   </ion-item>
   <div class="container">
     

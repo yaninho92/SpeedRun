@@ -22,6 +22,7 @@ export class ProfilePage implements AfterViewInit {
 
   ngAfterViewInit() {
     this.barChartMethod();
+    this.barChartProfileMethod();
   }
 
   barChartMethod() {
@@ -30,15 +31,11 @@ export class ProfilePage implements AfterViewInit {
       data: {
         labels: ['Km', 'Poids'],
         datasets: [{
-          data: [200, 50, 30, 15, 20, 34],
+          data: [200, 50],
           backgroundColor: [
             'rgba(248, 174, 107)',
-            'rgba(248, 174, 107)'
+            'rgba(107, 85, 248)'
           ],
-          borderColor: [
-            'rgba(255,99,132,1)',
-          ],
-          borderWidth: 1
         }]
       },
       options: {
