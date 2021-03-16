@@ -1,9 +1,23 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <img src="../../assets/img/logo/Speed_Run_logo.png" alt="Logo SpeedRun">
+  <form>
+    <ion-item color="light" lines="full">
+      <div class="inputContainer">
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="text" required></ion-input>
+      </div>
+    </ion-item>
 
+    <ion-item color="light" lines="full">
+      <ion-label position="floating">Mot de passe</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/home']" type="submit" expand="block">Connexion</ion-button>
+        <a [routerLink]="['/forgot-password']" class="small-text">Mot de passe oublier ?</a>
+      </ion-col>
+    </ion-row>
+  </form>
 </ion-content>
