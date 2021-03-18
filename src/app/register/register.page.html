@@ -2,13 +2,16 @@
   <ion-card color="light">
     <ion-item color="secondary">
       <ion-icon color="primary" name="flash-outline" slot="start"></ion-icon>
-      <ion-label>Offre Prémium</ion-label>
-      <ion-button color="primary" [routerLink]="['']" type="submit" fill="outline" slot="end"><ion-icon color="primary" name="card-outline"></ion-icon></ion-button>
+      <ion-label>Passe à l'Offre Prémium</ion-label>
+      <ion-button color="primary" [routerLink]="['/payment']" type="submit" fill="outline" slot="end"><ion-icon color="primary" name="card-outline"></ion-icon></ion-button>
     </ion-item>
   
     <ion-card-content>
-      Accéde à l'offre pémium pour seulement 20€ par mois.
-      Un Coach personnelle qui t'attribue des exercices personnelle et .... 
+      <p><ion-icon color="primary" name="checkmark-circle-outline"></ion-icon> Coach personelle</p>
+      <p><ion-icon color="secondary" name="checkmark-circle-outline"></ion-icon> Exercices personaliser</p>
+      <p><ion-icon color="tertiary" name="checkmark-circle-outline"></ion-icon> Planning nutrionelle personaliser</p>
+      <p><ion-icon color="success" name="checkmark-circle-outline"></ion-icon> Chat en temps réel avec ton coach </p>
+      <p><ion-icon name="checkmark-circle-outline"></ion-icon> Et bientot plus </p>
     </ion-card-content>
   </ion-card>
   
@@ -20,7 +23,7 @@
             <ion-avatar slot="start">
               <img src="../../assets/img/avatar/profil.jpg">
             </ion-avatar>
-             <ion-input type="file"></ion-input>
+             <ion-icon name="download-outline" type ="file"><ion-input type="file"></ion-input></ion-icon>
           </ion-item>
         </ion-col>
       
@@ -80,7 +83,7 @@
       
       <ion-item color="light">
         <ion-label>Programme</ion-label>
-        <ion-select value="poids" okText="Okay" cancelText="Annuler">
+        <ion-select value="poids" okText="Ok" cancelText="Annuler">
           <ion-select-option value="poids">Perte de poids</ion-select-option>
           <ion-select-option value="masse">Prise de masse</ion-select-option>
           <ion-select-option value="fesses">Grosse fesses</ion-select-option>
@@ -90,7 +93,7 @@
       
       <ion-item color="light">
         <ion-label>Environement</ion-label>
-        <ion-select value="interieur" okText="Okay" cancelText="Annuler">
+        <ion-select value="interieur" okText="Ok" cancelText="Annuler">
           <ion-select-option value="interieur">Intérieur</ion-select-option>
           <ion-select-option value="exterieur">Extérieur</ion-select-option>
           <ion-select-option value="2">Les deux</ion-select-option>
@@ -98,7 +101,7 @@
       </ion-item>
   </ion-grid>
 
-    <p><ion-checkbox color="primary"></ion-checkbox>En cochant la case J'accepte les présentes conditions, vous confirmez avoir lu, compris et acceptez le règlement prévu aux Conditions d'utilisation</p>
+    <p><ion-checkbox color="primary"></ion-checkbox>En cochant la case J'accepte les présentes conditions, vous confirmez avoir lu, compris et acceptez le règlement prévu aux <a [routerLink]="['']" > Conditions d'utilisation</a></p>
     <ion-row>
       <ion-col>
         <ion-button [routerLink]="['']" type="submit" expand="block">Inscription</ion-button>
