@@ -1,0 +1,64 @@
+<ion-content>
+  <ion-card color="light">
+    <ion-item color="secondary">
+      <ion-icon color="primary" name="flash-outline" slot="start"></ion-icon>
+      <ion-label> Tu as fait le bon choix</ion-label>
+      <ion-button color="primary" [routerLink]="['/payment']" type="submit" fill="outline" slot="end"><ion-icon color="primary" name="card-outline"></ion-icon></ion-button>
+    </ion-item>
+  
+    <ion-card-content>
+      <p><ion-icon color="primary" name="flame-outline"></ion-icon>Pour seulement 20€/mois accède à toutes ces fonctionnalitées<ion-icon color="primary" name="flame-outline"></ion-icon></p>
+      <p><ion-icon color="tertiary" name="checkmark-circle-outline"></ion-icon> Coach personelle</p>
+      <p><ion-icon color="tertiary" name="checkmark-circle-outline"></ion-icon> Exercices personaliser</p>
+      <p><ion-icon color="tertiary" name="checkmark-circle-outline"></ion-icon> Planning nutrionelle personaliser</p>
+      <p><ion-icon color="tertiary" name="checkmark-circle-outline"></ion-icon> Chat en temps réel avec ton coach </p>
+      <p><ion-icon color="tertiary" name="checkmark-circle-outline"></ion-icon> Et bientot plus </p>
+    </ion-card-content>
+  </ion-card>
+  
+  <form>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item color="light" lines="full">
+            <div class="inputContainer">
+              <ion-label position="floating">Nom du titulaire</ion-label>
+              <ion-input type="text" required></ion-input>
+            </div>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+        <ion-item color="light" lines="full">
+          <div class="inputContainer">
+            <ion-label position="floating">Numéro de Carte</ion-label>
+            <ion-input type="text" required></ion-input>
+          </div>
+        </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-item color="light" lines="full">
+            <div class="inputContainer">
+              <ion-label position="floating">Date d'exp</ion-label>
+              <ion-input type="text" required></ion-input>
+            </div>
+          </ion-item>
+        </ion-col>
+      
+        <ion-col>
+          <ion-item color="light" lines="full">
+            <div class="inputContainer">
+              <ion-label position="floating">CVC</ion-label>
+              <ion-input type="text" required></ion-input>
+            </div>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['']" type="submit" expand="block">Paiement    <ion-icon style="margin-left: 10px;" name="card-outline"></ion-icon></ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
