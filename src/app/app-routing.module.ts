@@ -26,10 +26,6 @@ const routes: Routes = [
     path: 'stats',
     loadChildren: () => import('./stats/stats.module').then( m => m.StatsPageModule)
   },
-  {
-    path: 'exerciceID',
-    loadChildren: () => import('./exerciceID/exerciceID.module').then(m => m.ExerciceIDPageModule)
-  },
 
 ];
 @NgModule({
