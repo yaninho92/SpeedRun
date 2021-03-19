@@ -58,6 +58,26 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'stats',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../stats/stats.module').then(m => m.StatsPageModule)
+          }
+        ]
+      },
+      {
+        path: 'exerciceID',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../exerciceID/exerciceID.module').then(m => m.ExerciceIDPageModule)
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'

@@ -1,0 +1,27 @@
+<ion-content>
+  <ion-title><img class="bannierePub" src="../../assets/img/pub/pub.jpg"></ion-title>
+  <ion-item color="light">
+    <ion-avatar slot="start">
+      <img src="../../assets/img/avatar/Killua_close_up.png">
+    </ion-avatar>
+    <div class="profileTextContainer">
+      <h3>Killua Zoldyck</h3>
+      <p>Prise de masse</p>
+      <p>Intérieur/Extérieur</p>
+    </div>
+    <ion-button [routerLink]="['/login']"><ion-icon name="exit-outline"></ion-icon></ion-button>
+    <ion-button><ion-icon name="calendar-outline"></ion-icon></ion-button>
+  </ion-item>
+  <div class="container">
+    
+    <ion-title>Statistique</ion-title>
+    <section class="graphContainer">
+      <canvas #barCanvas></canvas>
+    </section>
+
+    <ion-title>Evolution</ion-title>
+    <section class="graphContainer">
+      <canvas #lineCanvas></canvas>
+    </section>
+  </div>
+</ion-content>

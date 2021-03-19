@@ -38,15 +38,6 @@ export class ProfilePage implements AfterViewInit {
           ],
         }]
       },
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true
-            }
-          }]
-        }
-      }
     });
   }
   barChartProfileMethod() {
