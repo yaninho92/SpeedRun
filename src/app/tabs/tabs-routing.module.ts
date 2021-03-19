@@ -78,6 +78,16 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'nutritionID',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../nutritionID/nutritionID.module').then(m => m.NutritionIDPageModule)
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'
