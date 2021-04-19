@@ -25,11 +25,6 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-@media (prefers-color-scheme: dark) {
-  /*
-   * Dark Colors
-   * -------------------------------------------
-   */
   
   body {
     --ion-color-primary: #f8ae6b;
@@ -97,7 +92,7 @@
   }
   
   /*
-   * iOS Dark Theme
+   * iOS Theme
    * -------------------------------------------
    */
   
@@ -175,7 +170,7 @@
   ion-title.title-large {
     --color: white;
   }
-}
+
 .img{
   border-radius: 30px;
   height: 140px;

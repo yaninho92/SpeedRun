@@ -9,10 +9,11 @@
       <p>Prise de masse</p>
       <p>Intérieur/Extérieur</p>
     </div>
-    <ion-button tab="profileCalendar"><ion-icon name="calendar-outline"></ion-icon></ion-button>
+    <ion-button [routerLink]="['/login']"><ion-icon name="exit-outline"></ion-icon></ion-button>
+    <ion-button [routerLink]="['/calendrier']" ><ion-icon name="calendar-outline"></ion-icon></ion-button>
   </ion-item>
   <ion-item color="light">
-    <ion-button ><ion-icon name="stats-chart-outline"></ion-icon></ion-button>
+    <ion-button [routerLink]="['/stats']"  ><ion-icon name="stats-chart-outline"></ion-icon></ion-button>
     <ion-title>Statistique</ion-title>
     <section class="graphContainer">
       <canvas #barCanvas></canvas>

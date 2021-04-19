@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.demo.pg.cap.ng",
-  "appName": "ma grosse bite de noir",
+  "appId": "fr.speedRun.yani",
+  "appName": "SpeedRun",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
