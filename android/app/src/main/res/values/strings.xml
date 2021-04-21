@@ -4,4 +4,5 @@
     <string name="title_activity_main">SpeedRun</string>
     <string name="package_name">fr.speedRun.yani</string>
     <string name="custom_url_scheme">fr.speedRun.yani</string>
+
 </resources>
