@@ -122,6 +122,7 @@ capacitor-cordova-android-plugins
 
 # Copied web assets
 app/src/main/assets/public
+
 .gitignore
 build.gradle
 capacitor.settings.gradle

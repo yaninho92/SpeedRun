@@ -1,4 +1,4 @@
-package io.ionic.demo.pg.cap.ng;
+package fr.speedRun.yani;
 
 import android.os.Bundle;
 

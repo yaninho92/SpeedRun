@@ -9,9 +9,7 @@ import { Chart } from 'chart.js';
 })
 export class ProfilePage implements AfterViewInit {
   @ViewChild('barCanvas') private barCanvas: ElementRef;
-  @ViewChild('barProfileCanvas') private barProfileCanvas: ElementRef;
-  @ViewChild('doughnutCanvas') private doughnutCanvas: ElementRef;
-  @ViewChild('lineCanvas') private lineCanvas: ElementRef;
+  
 
   barChart: any;
   barChartProfile:any;
@@ -22,7 +20,6 @@ export class ProfilePage implements AfterViewInit {
 
   ngAfterViewInit() {
     this.barChartMethod();
-    this.barChartProfileMethod();
   }
 
   barChartMethod() {
