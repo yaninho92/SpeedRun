@@ -1,5 +1,6 @@
-{
-  "appId": "fr.speedRun.yani",
+
+
+  "appId": "fr.speedRun.yani
   "appName": "SpeedRun",
   "bundledWebRuntime": false,
   "npmClient": "npm",
