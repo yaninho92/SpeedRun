@@ -1,4 +1,6 @@
+import { HttpClient} from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-register',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.page.scss'],
 })
 export class RegisterPage implements OnInit {
-
-  constructor() { }
+  user: any = {}
+  url = 'https://grosse-bite-de-noir.herokuapp.com/app/register'
+  constructor(private http: HttpClient) {}
 
   ngOnInit() {
   }
 
+  submit(){
+    this.http.post(this.url, this.user).toPromise().then((data: any) =>{
+      this.user = data.json;
+    })
+  }
+
 }
+

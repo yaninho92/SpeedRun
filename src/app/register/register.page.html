@@ -35,28 +35,28 @@
     <ion-item color="light" lines="full">
       <div class="inputContainer">
         <ion-label position="floating">Nom d'utilisateur</ion-label>
-        <ion-input type="text" required></ion-input>
+        <ion-input [(ngModel)]="user.pseudo" name="pseudo" type="text" required></ion-input>
       </div>
     </ion-item>
 
     <ion-item color="light" lines="full">
       <div class="inputContainer">
         <ion-label position="floating">Email</ion-label>
-        <ion-input type="text" required></ion-input>
+        <ion-input [(ngModel)]="user.email" name="email" type="text" required></ion-input>
       </div>
     </ion-item>
 
       <ion-item color="light" lines="full">
         <div class="inputContainer">
           <ion-label position="floating">Mot de passe</ion-label>
-          <ion-input type="text" required></ion-input>
+          <ion-input [(ngModel)]="user.password" name="password" type="text" required></ion-input>
         </div>
       </ion-item>
 
       <ion-item color="light" lines="full">
         <div class="inputContainer">
           <ion-label position="floating">Confirme ton mot de passe</ion-label>
-          <ion-input type="text" required></ion-input>
+          <ion-input [(ngModel)]="user.confirmPassword" name="confirmPassword" type="text" required></ion-input>
         </div>
       </ion-item>
 
@@ -70,13 +70,6 @@
       <ion-item color="light" lines="full">
         <div class="inputContainer">
           <ion-label position="floating">Taille</ion-label>
-          <ion-input type="text" required></ion-input>
-        </div>
-      </ion-item>
-
-      <ion-item color="light" lines="full">
-        <div class="inputContainer">
-          <ion-label position="floating">Ecg</ion-label>
           <ion-input type="text" required></ion-input>
         </div>
       </ion-item>
@@ -104,7 +97,7 @@
     <p><ion-checkbox color="primary"></ion-checkbox>En cochant la case J'accepte les présentes conditions, vous confirmez avoir lu, compris et acceptez le règlement prévu aux <a [routerLink]="['']" > Conditions d'utilisation</a></p>
     <ion-row>
       <ion-col>
-        <ion-button [routerLink]="['']" type="submit" expand="block">Inscription</ion-button>
+        <ion-button (click)="submit()" [routerLink]="['']" type="submit" expand="block">Inscription</ion-button>
       </ion-col>
     </ion-row>
   </form>
