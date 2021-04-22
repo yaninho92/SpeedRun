@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,22 +6,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
-export class LoginPage implements OnInit {
-
-  constructor() { }
-
+export class LoginPage {
+  user: any = {}
+  url = 'http://localhost:3000/app/login'
+  constructor(private http :HttpClient) { }
   ngOnInit() {
-    var xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
-
-    xhr.addEventListener("readystatechange", function() {
-    if(this.readyState === 4) {
-    console.log(this.responseText);
-    }
-    });
-
-    xhr.open("GET", "http://storage.googleapis.com/ecole-97299.appspot.com/607bfc53a5275909583242ec_059bebf2-c696-4d1a-a073-52cd4f0b91a6.jpg%22");
-    xhr.send();
   }
 
+  submit(){
+    this.http.post(this.url, this.user).toPromise().then((data: any) =>{
+      console.log(data)
+      this.user = data;
+      console.log(this.user)
+    })
+  }
 }
