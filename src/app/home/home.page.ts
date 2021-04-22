@@ -31,7 +31,7 @@ export class HomePage  {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${this.token}`
   })
-  url:string = 'http://localhost:3000/app/home';
+  url:string = 'https://le-roi-mike.herokuapp.com/app/home';
   constructor(private http: HttpClient) {
     this.http.get(this.url,{'headers': this.headers}).subscribe((data)=>{
       console.log(data);

@@ -19,7 +19,7 @@ export class StatsPage implements AfterViewInit {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${this.token}`
   })
-  url:string = 'http://localhost:3000/app/stat';
+  url:string = 'https://le-roi-mike.herokuapp.com/app/stat';
   constructor(private http : HttpClient) {
     this.http.get(this.url,{'headers': this.headers}).subscribe((data)=>{
       this.statsData = data['stats'];

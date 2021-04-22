@@ -21,7 +21,7 @@ export class NutritionPage {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${this.token}`
   })
-  url:string = 'http://localhost:3000/app/nutrition';
+  url:string = 'https://le-roi-mike.herokuapp.com/app/nutrition';
   constructor(private http : HttpClient) {
     this.http.get(this.url,{'headers': this.headers}).subscribe((data)=>{
       console.log(data);
